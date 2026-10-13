@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Threads Hunter</title>
+<meta name="description" content="Privacy policy and data deletion instructions for the Threads Hunter app.">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #e3e3e6; --accent: #0b57d0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141416; --fg: #ececee; --muted: #a0a0a8; --line: #2c2c30; --accent: #8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 72px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  .meta { color: var(--muted); margin-bottom: 28px; }
+  a { color: var(--accent); }
+  code { font-size: .92em; }
+  .box { border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin: 14px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">App: <strong>Threads Hunter</strong> · Last updated: October 13, 2026</p>
+
+  <p>Threads Hunter is a private tool used by one independent creator (the "operator", "we") who sells their own
+  printable educational worksheets for children. It is not offered to the public and has no users other than the
+  operator. This policy explains what information the app processes when it interacts with the Threads platform,
+  and how anyone can ask for their data to be deleted.</p>
+
+  <h2>1. What the app does</h2>
+  <p>Using the official Threads API from Meta, the app searches for recent <strong>public</strong> Threads posts
+  on topics such as children's learning activities, handwriting and reading. An AI model drafts a short, helpful
+  reply. Replies are posted from the operator's own Threads account, either after the operator approves them or,
+  for a small number of high-confidence replies without links, automatically. The app posts at most 10 replies per
+  day and never more than one reply per post. The operator can delete any reply.</p>
+
+  <h2>2. Information we process</h2>
+  <ul>
+    <li><strong>Public post data from Threads search results:</strong> the post ID, text, author username,
+      permalink, timestamp, and the public reply status returned by the API.</li>
+    <li><strong>Replies we publish:</strong> the text of our reply and its Threads ID.</li>
+    <li><strong>Operator account credentials:</strong> the operator's own Threads access token, which is needed to
+      call the API.</li>
+  </ul>
+  <p>We do <strong>not</strong> collect private messages, email addresses, phone numbers, location, contacts,
+  follower lists, payment information or any non-public data. We do not use cookies or trackers. We do not
+  build profiles of individuals.</p>
+
+  <h2>3. How the information is used</h2>
+  <ul>
+    <li>To decide whether a public post is relevant and appropriate to reply to.</li>
+    <li>To draft and publish a reply, and to avoid replying to the same post or person repeatedly.</li>
+    <li>To show the operator a preview of each candidate reply in a private chat so it can be approved, edited,
+      skipped or deleted.</li>
+  </ul>
+  <p>Information is never sold, rented, or used for advertising targeting, and is never shown to anyone other
+  than the operator.</p>
+
+  <h2>4. Service providers</h2>
+  <p>To perform the steps above, limited data is passed to these processors:</p>
+  <ul>
+    <li><strong>Meta (Threads API)</strong>, to search public posts and publish replies.</li>
+    <li><strong>An AI language model provider</strong> (Google Gemini API or Anthropic Claude API), which receives
+      the text and username of a public post in order to draft a reply.</li>
+    <li><strong>Telegram</strong>, used as the operator's private notification channel, which receives the post
+      excerpt, username and draft reply.</li>
+    <li><strong>A cloud server</strong> (Amazon Web Services), where the app and its database run.</li>
+  </ul>
+
+  <h2>5. Storage and retention</h2>
+  <p>Data is stored in a private database on the operator's server, which only the operator can access.
+  Records of posts and replies are automatically deleted after <strong>90 days</strong>. The access token is
+  kept only for as long as the app is in use.</p>
+
+  <h2 id="data-deletion">6. Data deletion instructions</h2>
+  <p>If one of your public Threads posts was processed by this app and you want all related data removed,
+  send a request to the contact address below with your Threads username. Within <strong>30 days</strong> we will:</p>
+  <ul>
+    <li>delete every stored record associated with your username (post text, metadata, and history), and</li>
+    <li>on request, delete any reply this app posted under your Threads post.</li>
+  </ul>
+  <p>We will confirm by email once the deletion is complete. You can also hide or remove our reply yourself at
+  any time using the standard controls on Threads.</p>
+
+  <h2>7. Children</h2>
+  <p>The app replies to adults (parents, caregivers and teachers) who post publicly. It does not knowingly
+  process information from children. If you believe a post by a child was processed, contact us and it
+  will be deleted.</p>
+
+  <h2>8. Security</h2>
+  <p>The server is accessible only via key-based SSH. API credentials are stored in restricted files that are not
+  shared or published. Data in transit to the APIs above uses HTTPS.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, the "Last updated" date above will change too.</p>
+
+  <h2 id="contact">10. Contact</h2>
+  <div class="box">
+    <p><strong>Operator:</strong> [YOUR NAME OR BUSINESS NAME]</p>
+    <p><strong>Email:</strong> <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></p>
+    <p style="margin:0"><strong>Threads:</strong> <a href="https://www.threads.com/@amarashaf">@amarashaf</a></p>
+  </div>
+</main>
+</body>
+</html>
